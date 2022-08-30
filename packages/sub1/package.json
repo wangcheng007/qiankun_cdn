@@ -1,0 +1,13 @@
+{
+    "name": "sub1",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "vite",
+        "serve": "vite preview",
+        "build": "vite build",
+        "preview": "http-server ./dist -p 3001 --cors * --proxy-options.rewrite '/sub1/(.*) localhost://3001/$1 '"
+    },
+    "devDependencies": {
+        "http-server": "^14.1.1"
+    }
+}
