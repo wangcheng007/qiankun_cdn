@@ -4,6 +4,7 @@
  * @LastEditors: lanjing
  * @Description: file content
  */
+import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { renderWithQiankun, qiankunWindow } from 'vite-plugin-qiankun/dist/helper';
@@ -13,7 +14,7 @@ const render = (props: { container?: HTMLElement } = {}) => {
     const { container } = props;
 
     ReactDOM.render(
-        <Router basename={qiankunWindow.__POWERED_BY_QIANKUN__ ? '/sub1' : '/'}>
+        <Router basename={qiankunWindow.__POWERED_BY_QIANKUN__ ? '/sub2' : '/'}>
             <App />
         </Router>,
         container != null

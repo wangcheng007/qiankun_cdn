@@ -16,7 +16,8 @@ const App = () => {
             <div>
                 <h3>我是头部开始</h3>
                 <Link to="/" style={{ marginRight: 16 }}>home</Link>
-                <Link to="/sub1">sub1</Link>
+                <Link to="/sub1" style={{ marginRight: 16 }}>sub1</Link>
+                <Link to="/sub2" style={{ marginRight: 16 }}>sub2</Link>
                 <h3>我是头部结束</h3>
             </div>
             <div>

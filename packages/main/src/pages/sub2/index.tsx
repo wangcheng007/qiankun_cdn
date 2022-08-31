@@ -10,23 +10,25 @@ import { useEffect } from 'react';
 
 registerMicroApps([
     {
-        name: 'sub1', // app name registered
-        entry: `${window.location.protocol}//${window.location.hostname}:3001`,
-        container: '#sub1',
-        activeRule: '/sub1',
+        name: 'sub2', // app name registered
+        entry: `${window.location.protocol}//${window.location.hostname}:3002`,
+        container: '#sub2',
+        activeRule: '/sub2',
     }
 ]);
 
 const Sub1 = () => {
 
     useEffect(() => {
-        start();
+        start({
+            sandbox: true,
+        });
     }, []);
     
     return (
         <div>
-            <div>我是sub1</div>
-            <div id="sub1"></div>
+            <div>我是sub2</div>
+            <div id="sub2"></div>
         </div>
     );
 }

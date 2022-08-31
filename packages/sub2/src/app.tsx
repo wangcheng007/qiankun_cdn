@@ -4,10 +4,13 @@
  * @LastEditors: lanjing
  * @Description: file content
  */
+import React, { useEffect } from 'react';
+import './index.less';
+
 const App = () => {
     return (
         <div className="app">
-            我是加载的子应用；1111
+            我是加载的子应用；2222
         </div>
     )
 }
